@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  phishingchecker:
+    build: .
+    container_name: phishingchecker
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Madrid
+
