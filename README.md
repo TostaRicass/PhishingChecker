@@ -55,6 +55,18 @@ TELEGRAM_BOT_TOKEN = "tu_token_de_telegram"
 TELEGRAM_CHAT_ID = "tu_chat_id"
 ```
 
+Edita el archivo `phishing_checker.py` con tu token de telegram en la línea 58:
+
+```python
+def alert_telegram(message):
+    url = f"https://api.telegram.org/tu_token_de_telegram/sendMessage"
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "Markdown"
+    }
+```
+
 ---
 
 ▶️ Instalación y ejecución
